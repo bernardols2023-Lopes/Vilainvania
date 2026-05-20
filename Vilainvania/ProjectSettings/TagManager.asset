@@ -47,5 +47,11 @@ TagManager:
   - name: personagem
     uniqueID: 382620835
     locked: 0
+  - name: heroi
+    uniqueID: 647216329
+    locked: 0
+  - name: fenix
+    uniqueID: 4083970135
+    locked: 0
   m_RenderingLayers:
   - Default
