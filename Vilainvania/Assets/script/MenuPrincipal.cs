@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement; // Obrigatório para manipular cenas
 public class MenuPrincipal : MonoBehaviour
 {
     // Função pública para ser chamada pelo botão
-    public void MudarCena(string Emanuel)
+    public void MudarCena(string emanuel)
     {
-        SceneManager.LoadScene(Emanuel);
+        SceneManager.LoadScene(emanuel);
     }
 }
