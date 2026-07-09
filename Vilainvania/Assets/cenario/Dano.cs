@@ -29,11 +29,18 @@ public class Dano : MonoBehaviour
 
     private void AplicarDano(GameObject alvo)
     {
+        // 1. Tenta dar dano se o alvo usar o script de Vida comum
         Vida scriptVida = alvo.GetComponent<Vida>();
-
         if (scriptVida != null)
         {
             scriptVida.ReceberDano(quantidadeDano);
+        }
+
+        // 2. Tenta dar dano se o alvo for o Boss (usando o script BossVida)
+        BossVida scriptBoss = alvo.GetComponent<BossVida>();
+        if (scriptBoss != null)
+        {
+            scriptBoss.TomarDano(quantidadeDano);
         }
 
         // Se for um tiro, destrói o próprio tiro para não dar dano repetido

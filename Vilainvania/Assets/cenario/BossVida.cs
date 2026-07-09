@@ -1,0 +1,35 @@
+using UnityEngine;
+
+public class BossVida : MonoBehaviour
+{
+    [Header("Configurações de Vida")]
+    public int vidaMaxima = 100;
+    private int vidaAtual;
+
+    void Start()
+    {
+        // Inicializa a vida do boss no começo do jogo
+        vidaAtual = vidaMaxima;
+    }
+
+    // Função pública que será chamada quando o jogador atacar o boss
+    public void TomarDano(int quantidadeDano)
+    {
+        vidaAtual -= quantidadeDano;
+        Debug.Log("Boss tomou dano! Vida atual: " + vidaAtual);
+
+        // Verifica se a vida acabou
+        if (vidaAtual <= 0)
+        {
+            Morrer();
+        }
+    }
+
+    void Morrer()
+    {
+        Debug.Log("Boss foi derrotado!");
+
+        // Aqui você pode tocar uma animação de morte antes de destruir
+        Destroy(gameObject);
+    }
+}

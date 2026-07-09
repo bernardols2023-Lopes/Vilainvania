@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class faca : MonoBehaviour
+public class atack : MonoBehaviour
 
 {
 
@@ -32,21 +32,7 @@ public class faca : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-
-    {
-
-        if (collision.CompareTag("Enemy"))
-
-        {
-
-            Destroy(collision.gameObject);
-
-            
-
-        }
-
-    }
+    
 
 
 }
