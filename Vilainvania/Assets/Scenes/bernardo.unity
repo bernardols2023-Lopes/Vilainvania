@@ -1080,7 +1080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4195abf4f3484334cb3941e509838435, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::mov
-  Speed: 8
+  Speed: 10
   bullet: {fileID: 2416378068356171415, guid: 298b19726b5c8dd4dbbcafc10c43163f, type: 3}
 --- !u!114 &1221247875
 MonoBehaviour:
