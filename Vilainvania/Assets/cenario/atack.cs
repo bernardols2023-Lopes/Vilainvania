@@ -42,7 +42,7 @@ public class faca : MonoBehaviour
 
             Destroy(collision.gameObject);
 
-            Destroy(gameObject);
+            
 
         }
 

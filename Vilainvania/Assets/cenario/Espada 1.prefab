@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7346738905127450076}
   - component: {fileID: 6956976680607297743}
   - component: {fileID: -2540900381291498958}
+  - component: {fileID: 6231209164007486765}
   m_Layer: 0
   m_Name: Espada 1
   m_TagString: Espada
@@ -82,7 +83,7 @@ SpriteRenderer:
   m_SortingLayerID: -210997161
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 8497382124441547033, guid: aec983b1c4572124b8625c2be3f7f90c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -158,7 +159,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.44, y: 0.52}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -179,3 +180,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::atack
   speed: 8
+--- !u!114 &6231209164007486765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2416378068356171415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5d76d7730841b4bb35143687c5e910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Dano
+  quantidadeDano: 20
+  tagDoAlvo: Enemy
+  destruirAoColidir: 0

@@ -239,19 +239,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 597966375141420932, guid: 1a90c29cfebe6d64199888fe386d3fca, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.025385866
       objectReference: {fileID: 0}
     - target: {fileID: 597966375141420932, guid: 1a90c29cfebe6d64199888fe386d3fca, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 597966375141420932, guid: 1a90c29cfebe6d64199888fe386d3fca, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.9996778
       objectReference: {fileID: 0}
     - target: {fileID: 597966375141420932, guid: 1a90c29cfebe6d64199888fe386d3fca, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 597966375141420932, guid: 1a90c29cfebe6d64199888fe386d3fca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -259,7 +259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 597966375141420932, guid: 1a90c29cfebe6d64199888fe386d3fca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 177.091
       objectReference: {fileID: 0}
     - target: {fileID: 597966375141420932, guid: 1a90c29cfebe6d64199888fe386d3fca, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -291,6 +291,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5621461967449834605, guid: 1a90c29cfebe6d64199888fe386d3fca, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1650456116}
+    - targetCorrespondingSourceObject: {fileID: 5621461967449834605, guid: 1a90c29cfebe6d64199888fe386d3fca, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1650456121}
   m_SourcePrefab: {fileID: 100100000, guid: 1a90c29cfebe6d64199888fe386d3fca, type: 3}
 --- !u!1 &263633582
 GameObject:
@@ -910,6 +913,8 @@ GameObject:
   - component: {fileID: 1221247871}
   - component: {fileID: 1221247870}
   - component: {fileID: 1221247874}
+  - component: {fileID: 1221247875}
+  - component: {fileID: 1221247876}
   m_Layer: 0
   m_Name: pixil-frame-0 (15) (1)_0
   m_TagString: Untagged
@@ -1056,13 +1061,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1221247868}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0.9975469, z: -0, w: -0.070001885}
   m_LocalPosition: {x: -6, y: -0.83, z: 0}
   m_LocalScale: {x: 0.2720746, y: 0.2720746, z: 0.2720746}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -188.028, z: 0}
 --- !u!114 &1221247874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1077,6 +1082,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::mov
   Speed: 8
   bullet: {fileID: 2416378068356171415, guid: 298b19726b5c8dd4dbbcafc10c43163f, type: 3}
+--- !u!114 &1221247875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221247868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2db913b211a1de45a68c674b8077521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControleJogador
+  velocidade: 3
+  forcaPulo: 6
+--- !u!114 &1221247876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221247868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a388fea77ad021746b3d87375aaf3ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Vida
+  vidaMaxima: 300
+  tempoInvencibilidade: 0.2
 --- !u!1 &1454125002
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,6 +1325,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.9, y: 1.26}
   m_EdgeRadius: 0
+--- !u!114 &1650456121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650456113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a388fea77ad021746b3d87375aaf3ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Vida
+  vidaMaxima: 100
+  tempoInvencibilidade: 0.2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -56,5 +56,8 @@ TagManager:
   - name: fenix
     uniqueID: 4083970135
     locked: 0
+  - name: hud
+    uniqueID: 2029912767
+    locked: 0
   m_RenderingLayers:
   - Default
