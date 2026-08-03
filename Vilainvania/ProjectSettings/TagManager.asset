@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Espada
   - enemy
+  - Texto
   layers:
   - Default
   - TransparentFX
@@ -59,6 +60,12 @@ TagManager:
     locked: 0
   - name: hud
     uniqueID: 2029912767
+    locked: 0
+  - name: fundo final
+    uniqueID: 2658247961
+    locked: 0
+  - name: fundo 2
+    uniqueID: 3537948003
     locked: 0
   m_RenderingLayers:
   - Default

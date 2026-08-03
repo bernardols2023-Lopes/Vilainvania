@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossVida : MonoBehaviour
 {
@@ -31,5 +32,9 @@ public class BossVida : MonoBehaviour
 
         // Aqui você pode tocar uma animação de morte antes de destruir
         Destroy(gameObject);
+
+        SceneManager.LoadScene("Vitoria");
     }
+
+
 }

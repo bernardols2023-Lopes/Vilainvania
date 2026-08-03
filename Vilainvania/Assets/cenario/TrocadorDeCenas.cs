@@ -14,7 +14,7 @@ public class TrocadorDeCenas : MonoBehaviour
     public void SairDoJogo()
     {
         // Mostra uma mensagem no console para você saber que funcionou (Pode deletar se quiser)
-        Debug.Log("But kitou..");
+        Debug.Log("you quit the game");
 
         Application.Quit();
     }

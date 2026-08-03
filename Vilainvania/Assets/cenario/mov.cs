@@ -16,7 +16,7 @@ public class mov : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
+        Mov();
 
 
         if (Input.GetButtonDown("Fire1"))
@@ -26,7 +26,7 @@ public class mov : MonoBehaviour
 
     }
 
-    void Move()
+    void Mov()
     {
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
         transform.position += movement * Time.deltaTime * Speed;

@@ -194,4 +194,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dano
   quantidadeDano: 1
   tagDoAlvo: enemy
-  destruirAoColidir: 0
+  destruirAoColidir: 1
