@@ -68,5 +68,8 @@ TagManager:
   - name: fundo 2
     uniqueID: 3537948003
     locked: 0
+  - name: cenario derrota
+    uniqueID: 73121269
+    locked: 0
   m_RenderingLayers:
   - Default

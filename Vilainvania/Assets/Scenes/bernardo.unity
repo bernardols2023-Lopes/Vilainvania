@@ -871,7 +871,7 @@ Rigidbody2D:
   m_Mass: 0.3
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0.9
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1066,7 +1066,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 619416308793971096, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: vidaMaxima
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5335240072865282281, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_Name
