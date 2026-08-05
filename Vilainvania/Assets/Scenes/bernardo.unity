@@ -1033,6 +1033,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 619416308793971096, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 5050627496284283336, guid: f3cb7ff2e6e70af46b24e6d96bdb2a68, type: 3}
+    - target: {fileID: 619416308793971096, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+      propertyPath: _cooldonw
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 619416308793971096, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+      propertyPath: _cooldown
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 619416308793971096, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: vidaMaxima
       value: 50
       objectReference: {fileID: 0}

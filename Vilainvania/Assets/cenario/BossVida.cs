@@ -3,14 +3,20 @@ using UnityEngine.SceneManagement;
 
 public class BossVida : MonoBehaviour
 {
+
     [Header("Configurações de Vida")]
     public int vidaMaxima = 100;
     private int vidaAtual;
+    
+    
 
     void Start()
     {
         // Inicializa a vida do boss no começo do jogo
         vidaAtual = vidaMaxima;
+        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
+        transform.position += movement * Time.deltaTime;
+
     }
 
     // Função pública que será chamada quando o jogador atacar o boss
@@ -36,5 +42,5 @@ public class BossVida : MonoBehaviour
         SceneManager.LoadScene("Vitoria");
     }
 
-
+   
 }
