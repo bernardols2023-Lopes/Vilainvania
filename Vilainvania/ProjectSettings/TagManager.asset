@@ -9,6 +9,7 @@ TagManager:
   - Espada
   - enemy
   - Texto
+  - hero
   layers:
   - Default
   - TransparentFX

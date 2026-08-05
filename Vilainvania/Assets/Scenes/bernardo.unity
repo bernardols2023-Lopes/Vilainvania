@@ -209,6 +209,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &246609041 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5335240072865282281, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+  m_PrefabInstance: {fileID: 1334066798}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &246609043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246609041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ece853a0d43f0349801ee5481dd474b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TiroBoss
+  prefabBala: {fileID: 5050627496284283336, guid: f3cb7ff2e6e70af46b24e6d96bdb2a68, type: 3}
+  pontoDeDisparo: {fileID: 1581502660}
+  tempoEntreTiros: 2
 --- !u!1 &263633582
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,7 +851,7 @@ GameObject:
   - component: {fileID: 1221247876}
   m_Layer: 0
   m_Name: hero
-  m_TagString: Untagged
+  m_TagString: hero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -848,10 +868,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.3
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.9
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1008,8 +1028,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2db913b211a1de45a68c674b8077521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControleJogador
-  velocidade: 3
-  forcaPulo: 6
+  velocidade: 2
+  forcaPulo: 8
 --- !u!114 &1221247876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1022,7 +1042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a388fea77ad021746b3d87375aaf3ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Vida
-  vidaMaxima: 300
+  vidaMaxima: 20
   tempoInvencibilidade: 0.2
 --- !u!1001 &1334066798
 PrefabInstance:
@@ -1058,7 +1078,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.81
+      value: 6.52
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1066,7 +1086,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1099,7 +1119,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5335240072865282281, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 246609043}
   m_SourcePrefab: {fileID: 100100000, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
 --- !u!1 &1454125002
 GameObject:
@@ -1238,6 +1261,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1581502659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1581502660}
+  m_Layer: 0
+  m_Name: ponto de disparo vilao
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1581502660
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581502659}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.15, y: -1.66, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1252,3 +1306,4 @@ SceneRoots:
   - {fileID: 263633586}
   - {fileID: 1221247873}
   - {fileID: 1334066798}
+  - {fileID: 1581502660}

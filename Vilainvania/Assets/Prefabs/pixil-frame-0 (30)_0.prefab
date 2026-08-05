@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 660123060664061089}
   - component: {fileID: -6597126023653649715}
   - component: {fileID: 7628739056521132085}
+  - component: {fileID: -6391603635855197715}
+  - component: {fileID: -5666635868272969883}
   m_Layer: 0
   m_Name: pixil-frame-0 (30)_0
   m_TagString: Untagged
@@ -149,7 +151,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -165,3 +167,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.89, y: 0.72}
   m_EdgeRadius: 0
+--- !u!114 &-6391603635855197715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5050627496284283336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5d76d7730841b4bb35143687c5e910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Dano
+  quantidadeDano: 1
+  tagDoAlvo: hero
+  destruirAoColidir: 1
+--- !u!114 &-5666635868272969883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5050627496284283336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f018a93f3b3bc4d822d1ee276b19cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovimentoBala
+  velocidade: 5
+  tempoDeVida: 5
