@@ -228,7 +228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TiroBoss
   prefabBala: {fileID: 5050627496284283336, guid: f3cb7ff2e6e70af46b24e6d96bdb2a68, type: 3}
   pontoDeDisparo: {fileID: 1581502660}
-  tempoEntreTiros: 2
+  tempoEntreTiros: 1.7
 --- !u!1 &263633582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,7 +1066,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 619416308793971096, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: vidaMaxima
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 5335240072865282281, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_Name

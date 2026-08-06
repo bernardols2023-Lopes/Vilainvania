@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/bernardo.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/Derrota.unity
-    guid: 1b4f7f7a5008b0841bcf85198dfa4fae
-  - enabled: 1
     path: Assets/Scenes/Vitoria.unity
     guid: 88040799da91d6340a27be5c7a8397ce
+  - enabled: 1
+    path: Assets/Scenes/Derrota.unity
+    guid: 1b4f7f7a5008b0841bcf85198dfa4fae
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
