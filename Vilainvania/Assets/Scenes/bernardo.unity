@@ -1028,7 +1028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2db913b211a1de45a68c674b8077521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControleJogador
-  velocidade: 1
+  velocidade: 0.5
   forcaPulo: 8
 --- !u!114 &1221247876
 MonoBehaviour:
