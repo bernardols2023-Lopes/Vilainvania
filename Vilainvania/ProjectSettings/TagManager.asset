@@ -71,5 +71,8 @@ TagManager:
   - name: cenario derrota
     uniqueID: 73121269
     locked: 0
+  - name: bala
+    uniqueID: 3103339125
+    locked: 0
   m_RenderingLayers:
   - Default

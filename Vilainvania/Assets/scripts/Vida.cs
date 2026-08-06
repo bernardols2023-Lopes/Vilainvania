@@ -1,5 +1,6 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Vida : MonoBehaviour
 {
@@ -44,5 +45,11 @@ public class Vida : MonoBehaviour
     {
         Debug.Log(gameObject.name + " morreu definitivamente!");
         Destroy(gameObject);
+        Debug.Log("Boss foi derrotado!");
+
+        // Aqui você pode tocar uma animação de morte antes de destruir
+        Destroy(gameObject);
+
+        SceneManager.LoadScene("Derrota");
     }
 }
