@@ -80,5 +80,8 @@ TagManager:
   - name: personagem
     uniqueID: 4034542909
     locked: 0
+  - name: Texto
+    uniqueID: 1139915887
+    locked: 0
   m_RenderingLayers:
   - Default

@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,7 +7,7 @@ public class Vida : MonoBehaviour
 {
     public int vidaMaxima = 100;
     private int vidaAtual;
-
+    [SerializeField] TMP_Text vidaPlayer;
     private bool estaInvencivel = false;
     public float tempoInvencibilidade = 0.2f; // Tempo para aceitar o próximo dano
 
@@ -50,6 +51,10 @@ public class Vida : MonoBehaviour
         // Aqui você pode tocar uma animação de morte antes de destruir
         Destroy(gameObject);
 
-        SceneManager.LoadScene("Derrota");
+        SceneManager.LoadScene("Derrota"); 
+    }
+    private void Update()
+    {
+        vidaPlayer.text = $"Sua vida: {vidaAtual}";
     }
 }
