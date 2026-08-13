@@ -1,13 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using TMPro;
 public class BossVida : MonoBehaviour
 {
 
     [Header("Configurações de Vida")]
     public int vidaMaxima = 100;
     private int vidaAtual;
-    
+    [SerializeField] TextMeshPro vidaBoss;
     
 
     void Start()
@@ -41,6 +41,9 @@ public class BossVida : MonoBehaviour
 
         SceneManager.LoadScene("Vitoria");
     }
+    private void Update()
+    {
+        
+    }
 
-   
 }
