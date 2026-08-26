@@ -39,11 +39,15 @@ public class BossVida : MonoBehaviour
         // Aqui você pode tocar uma animação de morte antes de destruir
         Destroy(gameObject);
 
-        SceneManager.LoadScene("Vitoria");
+        SceneManager.LoadScene("fase 2");
+        
     }
+        
+
+    
     private void Update()
     {
         vidaBoss.text = $"Vida do chefe: {vidaAtual}";
     }
-
+    
 }
