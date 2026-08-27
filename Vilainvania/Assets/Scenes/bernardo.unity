@@ -1381,7 +1381,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Vida
   vidaMaxima: 16
   vidaPlayer: {fileID: 276241166}
-  tempoInvencibilidade: 0
 --- !u!1001 &1334066798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1408,7 +1407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 619416308793971096, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: vidaMaxima
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5335240072865282281, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_Name

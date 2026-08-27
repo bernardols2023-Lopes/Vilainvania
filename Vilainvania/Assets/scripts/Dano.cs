@@ -6,6 +6,7 @@ public class Dano : MonoBehaviour
 
     [Header("Configuração de Alvo")]
     public string tagDoAlvo = "Inimigo";
+    public string TagDoAlvo = "enemy2";
 
     [Header("Opções do Projétil")]
     [Tooltip("Marque se este objeto for um tiro, flecha ou magia que deve sumir após acertar o alvo")]
