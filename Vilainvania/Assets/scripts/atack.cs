@@ -32,7 +32,7 @@ public class atack : MonoBehaviour
         {
 
             Destroy(collision.gameObject);//Esse destroi o inimigo quando a bala toca
-           
+            Destroy(gameObject);//Esse destroi a bala quando toca
           
             SceneManager.LoadScene("Vitoria");
         }
