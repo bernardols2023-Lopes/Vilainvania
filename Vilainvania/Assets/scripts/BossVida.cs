@@ -31,15 +31,28 @@ public class BossVida : MonoBehaviour
             Morrer();
         }
     }
+    public void TomarDano2 (int quantidadeDano)
+    {
+        vidaAtual -= quantidadeDano;
+        Debug.Log("Boss tomou dano! Vida atual: " + vidaAtual);
+
+        // Verifica se a vida acabou
+        if (vidaAtual <= 0)
+        {
+            Morrer();
+        }
+    }
 
     void Morrer()
     {
-        Debug.Log("Boss foi derrotado!");
+        Debug.Log("Boss voltou mais forte!!");
 
         // Aqui você pode tocar uma animação de morte antes de destruir
         Destroy(gameObject);
 
+
         SceneManager.LoadScene("fase 2");
+        
         
     }
         
