@@ -28,14 +28,14 @@ public class atack : MonoBehaviour
             Destroy(collision.gameObject);//Esse destroi o inimigo quando a bala toca
             Destroy(gameObject);//Esse destroi a bala quando toca
         }
-        if (collision.CompareTag("enemy2"))
+        if (!collision.CompareTag("enemy2"))
         {
-
-            Destroy(collision.gameObject);//Esse destroi o inimigo quando a bala toca
-            Destroy(gameObject);//Esse destroi a bala quando toca
-          
-            SceneManager.LoadScene("Vitoria");
+            return;
         }
+
+        Destroy(collision.gameObject);//Esse destroi o inimigo quando a bala toca
+        Destroy(gameObject);//Esse destroi a bala quando toca
+
     }
 
 

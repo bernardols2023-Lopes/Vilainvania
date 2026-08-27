@@ -7,7 +7,7 @@ public class Dano : MonoBehaviour
     [Header("Configuração de Alvo")]
 
     public string tagDoAlvo = "Inimigo";
-    public string TagDoAlvo = "Inimigo2";
+    
 
     [Header("Opções do Projétil")]
     [Tooltip("Marque se este objeto for um tiro, flecha ou magia que deve sumir após acertar o alvo")]
@@ -28,21 +28,7 @@ public class Dano : MonoBehaviour
             AplicarDano(colisao.gameObject);
         }
     }
-    private void OnCollisionEnter2Dboss2(Collision2D colisao)
-    {
-        if (colisao.gameObject.CompareTag(TagDoAlvo))
-        {
-            AplicarDano(colisao.gameObject);
-        }
-    }
-
-    private void OnTriggerEnter2Dboss2(Collider2D colisao)
-    {
-        if (colisao.gameObject.CompareTag(TagDoAlvo))
-        {
-            AplicarDano(colisao.gameObject);
-        }
-    }
+   
 
     private void AplicarDano(GameObject alvo)
     {
@@ -58,7 +44,7 @@ public class Dano : MonoBehaviour
         if (scriptBoss != null)
         {
             scriptBoss.TomarDano(quantidadeDano);
-            CompareTag(TagDoAlvo);
+            CompareTag(tagDoAlvo);
         }
 
         // Se for um tiro, destrói o próprio tiro para não dar dano repetido
