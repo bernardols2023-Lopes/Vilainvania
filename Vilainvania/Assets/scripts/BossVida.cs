@@ -59,13 +59,7 @@ public class BossVida : MonoBehaviour
 
         }
     }
-
-
-
-        
-
-
-    void Morrer2()
+ void Morrer2()
     {
         Debug.Log("Você derrotou o boss");
 
