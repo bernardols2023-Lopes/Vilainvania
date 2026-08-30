@@ -28,13 +28,15 @@ public class BossVida : MonoBehaviour
         // Verifica se a vida acabou
         if (vidaAtual <= 0)
         {
-            Morrer();
-            SceneManager.LoadScene("fase 2");
+            Fase2();
+           
+             
+          
         }
     }
    
 
-    void Morrer()
+    void Fase2()
     {
         Debug.Log("Boss voltou mais forte!!");
 
@@ -42,19 +44,35 @@ public class BossVida : MonoBehaviour
         Destroy(gameObject);
 
         SceneManager.LoadScene("fase 2");
-
-        if (vidaAtual <= 0) 
+        if (vidaAtual <= 0)
         {
-            SceneManager.LoadScene("vitoria");
-        } 
-        
+            Morrer();
 
-        
-        
+
+        }
+
+
+
+
+
+
+
+
+
+
     }
-        
+    void Morrer()
+    {
+        SceneManager.LoadScene("vitoria");
+        if (vidaAtual <= 0)
+        {
+            Morrer();
 
-    
+
+        }
+    }
+
+
     private void Update()
     {
         vidaBoss.text = $"Vida do chefe: {vidaAtual}";
