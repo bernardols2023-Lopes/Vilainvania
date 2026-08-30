@@ -138,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TiroBoss
   prefabBala: {fileID: 5050627496284283336, guid: f3cb7ff2e6e70af46b24e6d96bdb2a68, type: 3}
   pontoDeDisparo: {fileID: 1581502660}
-  tempoEntreTiros: 2.5
+  tempoEntreTiros: 1.5
 --- !u!1 &263633582
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,7 +729,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 6ba30e6b92eb96b4da9916855110b9d3, type: 3}
+  m_Resource: {fileID: 8300000, guid: 26f74b3ed62ba0a44bdcdff5641e6a76, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1408,14 +1408,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 619416308793971096, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: vidaMaxima
-      value: 46
-      objectReference: {fileID: 0}
-    - target: {fileID: 619416308793971096, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
-      propertyPath: vidaMinima
-      value: 46
-      objectReference: {fileID: 0}
-    - target: {fileID: 619416308793971096, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
-      propertyPath: vidaMaxima2
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5335240072865282281, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
