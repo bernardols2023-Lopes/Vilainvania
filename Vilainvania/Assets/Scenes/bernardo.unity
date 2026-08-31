@@ -1367,6 +1367,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ControleJogador
   velocidade: 0.2
   forcaPulo: 8
+  audioSource: {fileID: 519420033}
+  somPulo: {fileID: 8300000, guid: e0b0fc80a8f971f4ba3f510bb7a58aec, type: 3}
 --- !u!114 &1221247876
 MonoBehaviour:
   m_ObjectHideFlags: 0
