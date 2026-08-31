@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.InputSystem; // Importante adicionar esta linha
+using UnityEngine.InputSystem; // Garanta que essa linha está no topo do seu script
 
 public class ControleJogador : MonoBehaviour
 {
@@ -9,6 +9,12 @@ public class ControleJogador : MonoBehaviour
     private bool estaNoChao;
     private float movimentoX;
 
+    // --- VARIÁVEIS PARA O SOM ---
+    [Header("Configurações de Áudio")]
+    public AudioSource audioSource;
+    public AudioClip somPulo;
+    public AudioClip somTiro; // ADICIONADO: Variável para o som de tiro
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -16,7 +22,7 @@ public class ControleJogador : MonoBehaviour
 
     void Update()
     {
-        // Movimento A e D (Novo Sistema)
+        // Movimento A e D
         if (Keyboard.current != null)
         {
             float esquerda = Keyboard.current.aKey.isPressed ? -1f : 0f;
@@ -27,6 +33,14 @@ public class ControleJogador : MonoBehaviour
             if (Keyboard.current.spaceKey.wasPressedThisFrame && estaNoChao)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, forcaPulo);
+                audioSource.PlayOneShot(somPulo);
+            }
+
+            // --- ADICIONADO: Botão de Tiro (Clique Esquerdo do Mouse) ---
+            if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+            {
+                audioSource.PlayOneShot(somTiro);
+                // Aqui você pode colocar a lógica futura de criar a bala (Instantiate)
             }
         }
     }
@@ -47,4 +61,3 @@ public class ControleJogador : MonoBehaviour
         if (collision.gameObject.CompareTag("Chao")) estaNoChao = false;
     }
 }
-

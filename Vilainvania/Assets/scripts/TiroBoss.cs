@@ -13,9 +13,17 @@ public class TiroBoss : MonoBehaviour
     [Tooltip("Tempo em segundos entre cada disparo")]
     public float tempoEntreTiros = 2.0f;
 
+    // --- VARIÁVEIS PARA O SOM ---
+    [Header("Configurações de Áudio")]
+    [Tooltip("Arraste o componente AudioSource do Boss aqui")]
+    public AudioSource audioSource;
+
+    [Tooltip("Arraste o som de tiro do Boss aqui")]
+    public AudioClip somTiro;
+
     void Start()
     {
-        // Inicia o ciclo de tiro assim que o jogo começa
+        // Inicia a rotina de tiros automáticos assim que o jogo começa
         StartCoroutine(RotinaDeTiro());
     }
 
@@ -39,6 +47,12 @@ public class TiroBoss : MonoBehaviour
         {
             // Cria a cópia da bala na posição e rotação exatas do ponto de disparo
             Instantiate(prefabBala, pontoDeDisparo.position, pontoDeDisparo.rotation);
+
+            // --- ADICIONADO: Toca o som do tiro automaticamente junto com a bala ---
+            if (audioSource != null && somTiro != null)
+            {
+                audioSource.PlayOneShot(somTiro);
+            }
         }
         else
         {

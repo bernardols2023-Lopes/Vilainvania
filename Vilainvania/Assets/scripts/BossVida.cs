@@ -6,7 +6,9 @@ public class BossVida : MonoBehaviour
 
     [Header("Configurações de Vida")]
     public int vidaMaxima = 100;
+    public int vidaMinima = 100;
     private int vidaAtual;
+    private int vida2;
     [SerializeField] TMP_Text vidaBoss;
     
 
@@ -14,6 +16,7 @@ public class BossVida : MonoBehaviour
     {
         // Inicializa a vida do boss no começo do jogo
         vidaAtual = vidaMaxima;
+        vida2 = vidaMinima;
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
         transform.position += movement * Time.deltaTime;
 
@@ -24,26 +27,57 @@ public class BossVida : MonoBehaviour
     {
         vidaAtual -= quantidadeDano;
         Debug.Log("Boss tomou dano! Vida atual: " + vidaAtual);
+        vida2 -= quantidadeDano;
+        Debug.Log("Boss tomou dano! Vida2: " + vida2);
 
         // Verifica se a vida acabou
-        if (vidaAtual <= 0)
+        if (vidaAtual <= 1)
         {
-            Morrer();
+            Morrer1();
+           
+             
+          
         }
     }
 
-    void Morrer()
+
+    void Morrer1()
     {
-        Debug.Log("Boss foi derrotado!");
+        Debug.Log("Você derrotou o boss");
+
+        // Aqui você pode tocar uma animação de morte antes de destruir
+        Destroy(gameObject);
+
+        SceneManager.LoadScene("fase 2");
+
+
+        if  (vida2 <= 0)
+        {
+            Morrer2();
+
+
+
+        }
+    }
+ void Morrer2()
+    {
+        Debug.Log("Você derrotou o boss");
 
         // Aqui você pode tocar uma animação de morte antes de destruir
         Destroy(gameObject);
 
         SceneManager.LoadScene("Vitoria");
+       
     }
+
     private void Update()
     {
-        vidaBoss.text = $"Vida do chefe: {vidaAtual}";
+        vidaBoss.text = $"Vida do chefe: {vida2}";
     }
 
 }
+
+
+
+
+

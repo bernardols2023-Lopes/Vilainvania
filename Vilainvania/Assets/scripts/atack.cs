@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class atack : MonoBehaviour
 {
@@ -27,5 +28,16 @@ public class atack : MonoBehaviour
             Destroy(collision.gameObject);//Esse destroi o inimigo quando a bala toca
             Destroy(gameObject);//Esse destroi a bala quando toca
         }
+        if (!collision.CompareTag("enemy2"))
+        {
+            return;
+        }
+
+        Destroy(collision.gameObject);//Esse destroi o inimigo quando a bala toca
+        Destroy(gameObject);//Esse destroi a bala quando toca
+
     }
+
+
+
 }
