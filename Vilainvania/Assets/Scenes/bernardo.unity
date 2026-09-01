@@ -1188,6 +1188,7 @@ GameObject:
   - component: {fileID: 1221247874}
   - component: {fileID: 1221247875}
   - component: {fileID: 1221247876}
+  - component: {fileID: 1221247877}
   m_Layer: 0
   m_Name: hero
   m_TagString: hero
@@ -1387,6 +1388,23 @@ MonoBehaviour:
   vidaMaxima: 16
   vidaPlayer: {fileID: 276241166}
   tempoInvencibilidade: 0
+--- !u!320 &1221247877
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221247868}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 7829246be1d2f0145bd297111ab910cc, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1001 &1334066798
 PrefabInstance:
   m_ObjectHideFlags: 0
