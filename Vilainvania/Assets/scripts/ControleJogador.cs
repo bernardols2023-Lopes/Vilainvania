@@ -9,15 +9,21 @@ public class ControleJogador : MonoBehaviour
     private bool estaNoChao;
     private float movimentoX;
 
+    // --- VARIÁVEL PARA CONTROLAR O DESENHO DA IMAGEM ---
+    private SpriteRenderer spriteRenderer;
+
     // --- VARIÁVEIS PARA O SOM ---
     [Header("Configurações de Áudio")]
     public AudioSource audioSource;
     public AudioClip somPulo;
-    public AudioClip somTiro; // ADICIONADO: Variável para o som de tiro
+    public AudioClip somTiro;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        // Pega automaticamente o componente de imagem do seu personagem
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -29,6 +35,21 @@ public class ControleJogador : MonoBehaviour
             float direita = Keyboard.current.dKey.isPressed ? 1f : 0f;
             movimentoX = esquerda + direita;
 
+            // --- RESOLUÇÃO DEFINITIVA DO GIRO USANDO FLIP VISUAL ---
+            if (spriteRenderer != null)
+            {
+                if (movimentoX > 0f)
+                {
+                    // Andando para a direita: desmarca o espelhamento (olha para a direita)
+                    spriteRenderer.flipX = true;
+                }
+                else if (movimentoX < 0f)
+                {
+                    // Andando para a esquerda: marca o espelhamento (olha para a esquerda)
+                    spriteRenderer.flipX = false;
+                }
+            }
+
             // Pulo (Espaço)
             if (Keyboard.current.spaceKey.wasPressedThisFrame && estaNoChao)
             {
@@ -36,18 +57,16 @@ public class ControleJogador : MonoBehaviour
                 audioSource.PlayOneShot(somPulo);
             }
 
-            // --- ADICIONADO: Botão de Tiro (Clique Esquerdo do Mouse) ---
+            // Botão de Tiro (Clique Esquerdo do Mouse)
             if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
             {
                 audioSource.PlayOneShot(somTiro);
-                // Aqui você pode colocar a lógica futura de criar a bala (Instantiate)
             }
         }
     }
 
     void FixedUpdate()
     {
-        // Aplicar movimento no X mantendo a física do Y
         rb.linearVelocity = new Vector2(movimentoX * velocidade, rb.linearVelocity.y);
     }
 
