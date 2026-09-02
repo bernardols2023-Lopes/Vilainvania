@@ -69,6 +69,7 @@ public class BossVida : MonoBehaviour
         SceneManager.LoadScene("Vitoria");
        
     }
+ 
 
     private void Update()
     {

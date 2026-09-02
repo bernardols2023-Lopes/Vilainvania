@@ -192,7 +192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5d76d7730841b4bb35143687c5e910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dano
-  quantidadeDano: 1
+  quantidadeDano: 200
   tagDoAlvo: enemy
-  TagDoAlvo: enemy2
   destruirAoColidir: 1

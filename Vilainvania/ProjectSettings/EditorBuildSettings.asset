@@ -26,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Derrota.unity
     guid: 1b4f7f7a5008b0841bcf85198dfa4fae
+  - enabled: 1
+    path: Assets/Scenes/fase secreta.unity
+    guid: cb9474f3385733d46a104f500a54fef0
+  - enabled: 1
+    path: Assets/Scenes/fasesecreta.unity
+    guid: 8b81d82d4f82eaf4caae4935519b1ffa
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
