@@ -573,7 +573,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Porque tinha que ser assim? agora voc\xEA est\xE1 no que eu chamo de \"casa\""
+  m_text: Porque tinha que ser assim?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -745,7 +745,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: fase 2
+          m_StringArgument: bernardo
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1591320208
@@ -1337,7 +1337,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8943689846880645223, guid: 8d6587805ffe75f49a2e8a99b8b6ed64, type: 3}
+  m_Sprite: {fileID: -2272567043596770683, guid: e94fe8c65de349d4a982653ad3fe0714, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1357,8 +1357,8 @@ Transform:
   m_GameObject: {fileID: 1930464092}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1046, y: 0.0641, z: 0}
-  m_LocalScale: {x: 6.152339, y: 3.5284424, z: 1}
+  m_LocalPosition: {x: -0.0384, y: -0.0022, z: 0}
+  m_LocalScale: {x: 18.292097, y: 10.282781, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

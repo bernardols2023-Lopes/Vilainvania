@@ -843,7 +843,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 372241edd1a78e849b1dfbe8603bca38, type: 3}
+  m_Resource: {fileID: 8300000, guid: e0c30352fb50bc541869d17dca1879e4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1588,7 +1588,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Vida
   vidaMaxima: 16
   vidaPlayer: {fileID: 276241166}
-  tempoInvencibilidade: 0
 --- !u!1001 &1334066798
 PrefabInstance:
   m_ObjectHideFlags: 0
