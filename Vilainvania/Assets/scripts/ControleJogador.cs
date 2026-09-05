@@ -37,8 +37,8 @@ public class ControlaJogador : MonoBehaviour
         // Movimento A e D
         if (Keyboard.current != null)
         {
-            float esquerda = Keyboard.current.aKey.isPressed ? -1f : 0f;
-            float direita = Keyboard.current.dKey.isPressed ? 1f : 0f;
+            float esquerda = Keyboard.current.aKey.isPressed ? 1f : 0f;
+            float direita = Keyboard.current.dKey.isPressed ? -1f : 0f;
             movimentoX = esquerda + direita;
 
             // --- RESOLUÇÃO DEFINITIVA DO GIRO USANDO FLIP VISUAL ---
