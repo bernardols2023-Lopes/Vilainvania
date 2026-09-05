@@ -360,7 +360,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.08185053, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -370,7 +370,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.1637008, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &393156489
 SpriteRenderer:
@@ -1189,6 +1189,7 @@ GameObject:
   - component: {fileID: 1221247875}
   - component: {fileID: 1221247876}
   - component: {fileID: 1221247877}
+  - component: {fileID: 1221247878}
   m_Layer: 0
   m_Name: hero
   m_TagString: hero
@@ -1261,7 +1262,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 11.29, y: 12.31}
+    oldSize: {x: 9.928572, y: 14.428572}
     newSize: {x: 11.29, y: 12.31}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1316,7 +1317,7 @@ SpriteRenderer:
   m_SortingLayerID: -1436623661
   m_SortingLayer: 10
   m_SortingOrder: 0
-  m_Sprite: {fileID: 9041126264343302072, guid: 4053f3c9554e84046a2533be32cdd41c, type: 3}
+  m_Sprite: {fileID: 7393251367605014468, guid: 21256d61d5e1a4440950033246714ed0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1335,13 +1336,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1221247868}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9975469, z: -0, w: -0.070001885}
-  m_LocalPosition: {x: -7.16, y: -1, z: -0.21}
+  m_LocalRotation: {x: -0, y: 0.050095692, z: -0, w: -0.9987445}
+  m_LocalPosition: {x: -7.16, y: -0.63, z: -0.21}
   m_LocalScale: {x: 0.2720746, y: 0.2720746, z: 0.2720746}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -188.028, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -365.743, z: 0}
 --- !u!114 &1221247874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1404,6 +1405,28 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!95 &1221247878
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221247868}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2fd4b8ca4fb5afd40bdb96c3bdb3e2a2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1334066798
 PrefabInstance:
   m_ObjectHideFlags: 0

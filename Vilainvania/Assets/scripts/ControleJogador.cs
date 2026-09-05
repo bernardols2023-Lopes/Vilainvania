@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem; // Garanta que essa linha está no topo do seu script
 
-public class ControleJogador : MonoBehaviour
+public class ControlaJogador : MonoBehaviour
 {
     public float velocidade = 8f;
     public float forcaPulo = 12f;
@@ -11,6 +11,9 @@ public class ControleJogador : MonoBehaviour
 
     // --- VARIÁVEL PARA CONTROLAR O DESENHO DA IMAGEM ---
     private SpriteRenderer spriteRenderer;
+
+    // --- VARIÁVEL PARA O ANIMATOR ---
+    private Animator anim;
 
     // --- VARIÁVEIS PARA O SOM ---
     [Header("Configurações de Áudio")]
@@ -24,6 +27,9 @@ public class ControleJogador : MonoBehaviour
 
         // Pega automaticamente o componente de imagem do seu personagem
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        // Pega automaticamente o componente de animação do seu personagem
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -40,13 +46,13 @@ public class ControleJogador : MonoBehaviour
             {
                 if (movimentoX > 0f)
                 {
-                    // Andando para a direita: desmarca o espelhamento (olha para a direita)
-                    spriteRenderer.flipX = true;
+                    // Andando para a direita: desmarca o espelhamento
+                    spriteRenderer.flipX = false;
                 }
                 else if (movimentoX < 0f)
                 {
-                    // Andando para a esquerda: marca o espelhamento (olha para a esquerda)
-                    spriteRenderer.flipX = false;
+                    // Andando para a esquerda: marca o espelhamento
+                    spriteRenderer.flipX = true;
                 }
             }
 
@@ -62,6 +68,19 @@ public class ControleJogador : MonoBehaviour
             {
                 audioSource.PlayOneShot(somTiro);
             }
+        }
+
+        // --- ENVIAR AS INFORMAÇÕES PARA O ANIMATOR ---
+        if (anim != null)
+        {
+            // Se movimentoX for diferente de 0, significa que está andando (true)
+            anim.SetBool("isWalking", movimentoX != 0f);
+
+            // Passa se o jogador está tocando o chão ou voando
+            anim.SetBool("isGrounded", estaNoChao);
+
+            // Passa a velocidade vertical (positivo subindo, negativo caindo)
+            anim.SetFloat("yVelocity", rb.linearVelocity.y);
         }
     }
 
