@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: -7695915868018957093, guid: 8cf3cd3575f651b429f2b76c1de39805, type: 3}
-  m_Color: {r: 0.803975, g: 0, b: 0.9528302, a: 1}
+  m_Color: {r: 0.85882354, g: 0.21568628, b: 0.7568696, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -181,6 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dano
   quantidadeDano: 1
   tagDoAlvo: hero
+  TagDoAlvo: inimigo2
   destruirAoColidir: 1
 --- !u!114 &-5666635868272969883
 MonoBehaviour:

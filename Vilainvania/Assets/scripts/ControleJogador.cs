@@ -1,18 +1,26 @@
 using UnityEngine;
 using UnityEngine.InputSystem; // Garanta que essa linha está no topo do seu script
 
-public class ControleJogador : MonoBehaviour
+public class ControlaJogador : MonoBehaviour
 {
-    public float velocidade = 8f;
+    [Header("Configurações de Movimento")]
+    public float velocidadeAndar = 5f;
+    public float velocidadeCorrer = 8f;
     public float forcaPulo = 12f;
+
+    private float velocidadeAtual;
     private Rigidbody2D rb;
     private bool estaNoChao;
     private float movimentoX;
+    private bool estaVivo = true;
 
-    // --- VARIÁVEL PARA CONTROLAR O DESENHO DA IMAGEM ---
+    // -- VARIAVEL PARA CONTROLAR O DESENHO DA IMAGEM --
     private SpriteRenderer spriteRenderer;
 
-    // --- VARIÁVEIS PARA O SOM ---
+    // -- VARIAVEL PARA O ANIMATOR --
+    private Animator anim;
+
+    // -- VARIAVEIS PARA O SOM --
     [Header("Configurações de Áudio")]
     public AudioSource audioSource;
     public AudioClip somPulo;
@@ -24,50 +32,114 @@ public class ControleJogador : MonoBehaviour
 
         // Pega automaticamente o componente de imagem do seu personagem
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        // Pega automaticamente o componente de animação do seu personagem
+        anim = GetComponent<Animator>();
     }
 
     void Update()
     {
+        // Se o jogador morreu, impede qualquer comando ou movimento
+        if (!estaVivo) return;
+
         // Movimento A e D
         if (Keyboard.current != null)
         {
-            float esquerda = Keyboard.current.aKey.isPressed ? -1f : 0f;
+            // Correção da direção: Direita (positivo) menos Esquerda (negativo)
+            float esquerda = Keyboard.current.aKey.isPressed ? 1f : 0f;
             float direita = Keyboard.current.dKey.isPressed ? 1f : 0f;
-            movimentoX = esquerda + direita;
+            movimentoX = direita - esquerda;
 
-            // --- RESOLUÇÃO DEFINITIVA DO GIRO USANDO FLIP VISUAL ---
-            if (spriteRenderer != null)
+            // Lógica de Correr: Se segurar o Shift Esquerdo, muda a velocidade
+            if (Keyboard.current.leftShiftKey.isPressed && movimentoX != 0f)
             {
-                if (movimentoX > 0f)
-                {
-                    // Andando para a direita: desmarca o espelhamento (olha para a direita)
-                    spriteRenderer.flipX = true;
-                }
-                else if (movimentoX < 0f)
-                {
-                    // Andando para a esquerda: marca o espelhamento (olha para a esquerda)
-                    spriteRenderer.flipX = false;
-                }
+                velocidadeAtual = velocidadeCorrer;
             }
-
-            // Pulo (Espaço)
-            if (Keyboard.current.spaceKey.wasPressedThisFrame && estaNoChao)
+            else
             {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, forcaPulo);
+                velocidadeAtual = velocidadeAndar;
+            }
+        }
+
+        // RESOLUÇÃO DEFINITIVA DO GIRO USANDO FLIP VISUAL
+        if (spriteRenderer != null)
+        {
+            if (movimentoX > 0f)
+            {
+                spriteRenderer.flipX = false;
+            }
+            else if (movimentoX < 0f)
+            {
+                spriteRenderer.flipX = true;
+            }
+        }
+
+        // Pulo (Espaço)
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && estaNoChao)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, forcaPulo);
+
+            if (audioSource != null && somPulo != null)
                 audioSource.PlayOneShot(somPulo);
-            }
+        }
 
-            // Botão de Tiro (Clique Esquerdo do Mouse)
-            if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
-            {
+        // Botão de Ataque/Tiro (Clique Esquerdo do Mouse)
+        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            // Ativa o gatilho de ataque no Animator
+            if (anim != null) anim.SetTrigger("attack");
+
+            if (audioSource != null && somTiro != null)
                 audioSource.PlayOneShot(somTiro);
-            }
+        }
+
+        // ENVIAR AS INFORMAÇÕES PARA O ANIMATOR
+        if (anim != null)
+        {
+            // Idle e Andar são controlados por essa linha (se for 0 é Idle, se não for é andando)
+            anim.SetBool("isWalking", movimentoX != 0f && velocidadeAtual == velocidadeAndar);
+
+            // Controle da animação de Correr
+            anim.SetBool("isRunning", movimentoX != 0f && velocidadeAtual == velocidadeCorrer);
+
+            anim.SetBool("isGrounded", estaNoChao);
+            anim.SetFloat("yVelocity", rb.linearVelocity.y);
         }
     }
 
     void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(movimentoX * velocidade, rb.linearVelocity.y);
+        if (!estaVivo)
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            return;
+        }
+
+        rb.linearVelocity = new Vector2(movimentoX * velocidadeAtual, rb.linearVelocity.y);
+    }
+
+    // FUNÇÃO PÚBLICA PARA FAZER O PERSONAGEM TOMAR DANO (Chame a partir dos inimigos/espinhos)
+    public void TomarDano()
+    {
+        if (!estaVivo) return;
+
+        if (anim != null)
+        {
+            anim.SetTrigger("takeDamage");
+        }
+    }
+
+    // FUNÇÃO PÚBLICA PARA FAZER O PERSONAGEM MORRER
+    public void Morrer()
+    {
+        if (!estaVivo) return;
+
+        estaVivo = false;
+
+        if (anim != null)
+        {
+            anim.SetTrigger("die");
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
