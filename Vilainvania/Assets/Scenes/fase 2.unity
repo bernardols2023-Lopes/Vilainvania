@@ -438,11 +438,11 @@ PrefabInstance:
       objectReference: {fileID: 519420033}
     - target: {fileID: 1302187449564657866, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: velocidadeAndar
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1302187449564657866, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: velocidadeCorrer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2274323135481937378, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: m_Material
