@@ -138,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TiroBoss
   prefabBala: {fileID: 5050627496284283336, guid: f3cb7ff2e6e70af46b24e6d96bdb2a68, type: 3}
   pontoDeDisparo: {fileID: 1581502660}
-  tempoEntreTiros: 2.5
+  tempoEntreTiros: 1.8
   audioSource: {fileID: 519420033}
   somTiro: {fileID: 8300000, guid: f6a72c8c2993a4346b04fddc0aa75745, type: 3}
 --- !u!1 &263633582
@@ -1199,11 +1199,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 619416308793971096, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: vidaMaxima
-      value: 46
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 619416308793971096, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: vidaMinima
-      value: 46
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 619416308793971096, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: vidaMaxima2
@@ -1754,11 +1754,11 @@ PrefabInstance:
       objectReference: {fileID: 519420033}
     - target: {fileID: 1302187449564657866, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: velocidadeAndar
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1302187449564657866, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: velocidadeCorrer
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2274323135481937378, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: m_Material
