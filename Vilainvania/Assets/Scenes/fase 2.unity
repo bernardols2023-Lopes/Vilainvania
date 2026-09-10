@@ -1587,6 +1587,55 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 246609054}
   m_SourcePrefab: {fileID: 100100000, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+--- !u!1 &1391659582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1391659584}
+  - component: {fileID: 1391659583}
+  m_Layer: 0
+  m_Name: ponto de disparo vilao (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1391659583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391659582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ece853a0d43f0349801ee5481dd474b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TiroBoss
+  prefabBala: {fileID: 5050627496284283336, guid: f3cb7ff2e6e70af46b24e6d96bdb2a68, type: 3}
+  pontoDeDisparo: {fileID: 1391659584}
+  tempoEntreTiros: 2.7
+  audioSource: {fileID: 519420033}
+  somTiro: {fileID: 8300000, guid: f6a72c8c2993a4346b04fddc0aa75745, type: 3}
+--- !u!4 &1391659584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391659582}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.70844436, w: 0.7057667}
+  m_LocalPosition: {x: -2.73, y: -6.93, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.217}
 --- !u!1 &1454125002
 GameObject:
   m_ObjectHideFlags: 0
@@ -1928,6 +1977,7 @@ SceneRoots:
   - {fileID: 263633586}
   - {fileID: 1334066798}
   - {fileID: 1581502660}
+  - {fileID: 1391659584}
   - {fileID: 1741130582}
   - {fileID: 1155584451}
   - {fileID: 690546125}
