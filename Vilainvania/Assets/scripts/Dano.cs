@@ -37,11 +37,18 @@ public class Dano : MonoBehaviour
             scriptVida.ReceberDano(quantidadeDano);
         }
 
-        // 2. CORRIGIDO: Agora procura por BossVida2 e chama TonarDano
-        BossVida2 scriptBoss = alvo.GetComponent<BossVida2>();
-        if (scriptBoss != null)
+        // 2. Tenta dar dano se o alvo for um Boss antigo (usando BossVida com 'TomarDano')
+        BossVida scriptBossAntigo = alvo.GetComponent<BossVida>();
+        if (scriptBossAntigo != null)
         {
-            scriptBoss.TonarDano(quantidadeDano);
+            scriptBossAntigo.TomarDano(quantidadeDano);
+        }
+
+        // 3. Tenta dar dano se o alvo for o Boss novo (usando BossVida2 com 'TonarDano')
+        BossVida2 scriptBossNovo = alvo.GetComponent<BossVida2>();
+        if (scriptBossNovo != null)
+        {
+            scriptBossNovo.TonarDano(quantidadeDano);
         }
 
         // Se for um tiro, destrói o próprio tiro para não dar dano repetido
