@@ -11,17 +11,17 @@ public class BossVida2 : MonoBehaviour
 
     void Start()
     {
-        // Inicializa a vida do boss no começo do jogo
+        
         vidaAtuais = vidaMaxima;
     }
 
-    // Mantido o nome original com 'n' para o jogador conseguir dar dano
+    
     public void TonarDano(int quantidadeDano)
     {
         vidaAtuais -= quantidadeDano;
         Debug.Log("Boss tomou dano! Vida atual: " + vidaAtuais);
 
-        // Verifica se a vida acabou
+        
         if (vidaAtuais <= 0)
         {
             Vitoria1();
@@ -32,7 +32,7 @@ public class BossVida2 : MonoBehaviour
     {
         Debug.Log("Você derrotou o boss");
 
-        // MUDANÇA DE CENA
+       
         SceneManager.LoadScene("Vitoria 1");
     }
 

@@ -14,7 +14,7 @@ public class BossVida : MonoBehaviour
 
     void Start()
     {
-        // Inicializa a vida do boss no começo do jogo
+        
         vidaAtual = vidaMaxima;
         vida2 = vidaMinima;
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
@@ -45,7 +45,7 @@ public class BossVida : MonoBehaviour
     {
         Debug.Log("Você derrotou o boss");
 
-        // Aqui você pode tocar uma animação de morte antes de destruir
+        
         Destroy(gameObject);
 
         SceneManager.LoadScene("fase 2");
@@ -63,7 +63,7 @@ public class BossVida : MonoBehaviour
     {
         Debug.Log("Você derrotou o boss");
 
-        // Aqui você pode tocar uma animação de morte antes de destruir
+        
         Destroy(gameObject);
 
         SceneManager.LoadScene("Vitoria");

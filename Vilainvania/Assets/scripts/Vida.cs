@@ -18,7 +18,6 @@ public class Vida : MonoBehaviour
 
     public void ReceberDano(int quantidadeDano)
     {
-        // Se estiver no frame de invencibilidade, ignora o dano totalmente
        
 
         vidaAtual -= quantidadeDano;
@@ -40,7 +39,6 @@ public class Vida : MonoBehaviour
         Destroy(gameObject);
         Debug.Log("Boss foi derrotado!");
 
-        // Aqui você pode tocar uma animação de morte antes de destruir
         Destroy(gameObject);
 
         SceneManager.LoadScene("Derrota"); 
