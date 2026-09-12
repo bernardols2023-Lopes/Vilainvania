@@ -73,7 +73,7 @@ public class BossVida : MonoBehaviour
 
     private void Update()
     {
-        vidaBoss.text = $"Vida do chefe: {vidaAtual}";
+        vidaBoss.text = $"Vida do chefe: {vida2}";
     }
 
 }
