@@ -1,63 +1,84 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
-
 public class BossVida : MonoBehaviour
 {
+
     [Header("Configurações de Vida")]
     public int vidaMaxima = 100;
     public int vidaMinima = 100;
-    private int vidaAtuais;
-    private int vidaMinimaAtuais;
+    private int vidaAtual;
+    private int vida2;
     [SerializeField] TMP_Text vidaBoss;
+    
 
     void Start()
     {
+        
+        vidaAtual = vidaMaxima;
+        vida2 = vidaMinima;
+        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
+        transform.position += movement * Time.deltaTime;
 
-        vidaAtuais = vidaMaxima;
-        vidaMinima = vidaMaxima;
     }
 
-
-    public void TonarDano(int quantidadeDano)
+    // Função pública que será chamada quando o jogador atacar o boss
+    public void TomarDano(int quantidadeDano)
     {
-        vidaAtuais -= quantidadeDano;
-        vidaMinima -= quantidadeDano;
-        Debug.Log("Boss tomou dano! Vida atual: " + vidaAtuais);
-        Debug.Log("Boss tomou dano! Vida atual: " + vidaMinima);
+        vidaAtual -= quantidadeDano;
+        Debug.Log("Boss tomou dano! Vida atual: " + vidaAtual);
+        vida2 -= quantidadeDano;
+        Debug.Log("Boss tomou dano! Vida2: " + vida2);
 
-
-
-        if (vidaAtuais <= 1)
+        // Verifica se a vida acabou
+        if (vidaAtual <= 1)
         {
-           Morrer1();
+            Morrer1();
+           
+             
+          
         }
     }
+
 
     void Morrer1()
     {
         Debug.Log("Você derrotou o boss");
 
+        
+        Destroy(gameObject);
+
         SceneManager.LoadScene("fase 2");
-        if (vidaAtuais <= 0) 
+
+
+        if  (vida2 <= 0)
         {
             Morrer2();
-        
+
+
+
         }
     }
-    void Morrer2()
+ void Morrer2()
     {
+        Debug.Log("Você derrotou o boss");
+
+        
+        Destroy(gameObject);
+
         SceneManager.LoadScene("Vitoria");
-
-
+       
     }
-
+ 
 
     private void Update()
     {
-        if (vidaBoss != null)
-        {
-            vidaBoss.text = $"Vida do chefe: {vidaAtuais}";
-        }
+        vidaBoss.text = $"Vida do chefe: {vidaAtual}";
     }
+
 }
+
+
+
+
+

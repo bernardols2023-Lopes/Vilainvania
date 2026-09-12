@@ -40,7 +40,7 @@ public class Dano : MonoBehaviour
         BossVida scriptBossAntigo = alvo.GetComponent<BossVida>();
         if (scriptBossAntigo != null)
         {
-            scriptBossAntigo.TonarDano(quantidadeDano);
+            scriptBossAntigo.TomarDano(quantidadeDano);
         }
 
         BossVida2 scriptBossNovo = alvo.GetComponent<BossVida2>();
