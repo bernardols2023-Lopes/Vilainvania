@@ -11,6 +11,7 @@ TagManager:
   - Texto
   - hero
   - enemy2
+  - ENEMY
   layers:
   - Default
   - TransparentFX
