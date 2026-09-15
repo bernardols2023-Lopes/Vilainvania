@@ -202,8 +202,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb2a34e6f4cdad64285bcee11011ce22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossVida
-  vidaMaxima: 171
-  vidaMinima: 170
+  vidaMaxima: 131
+  vidaMinima: 130
   vidaBoss: {fileID: 692869085}
 --- !u!82 &246609054
 AudioSource:
