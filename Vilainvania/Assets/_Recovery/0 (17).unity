@@ -275,8 +275,6 @@ MonoBehaviour:
   prefabBala: {fileID: 274576601668799808, guid: a77ebe074a0c8bd4a891c95af3b3e02a, type: 3}
   pontoDeDisparo: {fileID: 1581502660}
   tempoEntreTiros: 1.1
-  tempoMin: 2
-  tempoMax: 0.8
   audioSource: {fileID: 519420033}
   somTiro: {fileID: 8300000, guid: 5ecd626601ef1ed47a3f6e0b37e54654, type: 3}
 --- !u!82 &246609054
@@ -388,7 +386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9592ab9b6c4c72e40a78effbda2e0297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossVida2
-  vidaMaxima: 245
+  vidaMaxima: 230
   vidaBoss: {fileID: 692869085}
 --- !u!1 &263633582
 GameObject:
@@ -1644,8 +1642,6 @@ MonoBehaviour:
   prefabBala: {fileID: 274576601668799808, guid: a77ebe074a0c8bd4a891c95af3b3e02a, type: 3}
   pontoDeDisparo: {fileID: 1179134898}
   tempoEntreTiros: 4.5
-  tempoMin: 2
-  tempoMax: 3
   audioSource: {fileID: 519420033}
   somTiro: {fileID: 8300000, guid: f6a72c8c2993a4346b04fddc0aa75745, type: 3}
 --- !u!1 &1261918626
@@ -2088,8 +2084,6 @@ MonoBehaviour:
   prefabBala: {fileID: 274576601668799808, guid: a77ebe074a0c8bd4a891c95af3b3e02a, type: 3}
   pontoDeDisparo: {fileID: 1576327060}
   tempoEntreTiros: 4
-  tempoMin: 2
-  tempoMax: 4
   audioSource: {fileID: 519420033}
   somTiro: {fileID: 8300000, guid: f6a72c8c2993a4346b04fddc0aa75745, type: 3}
 --- !u!4 &1576327060
