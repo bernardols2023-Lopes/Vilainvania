@@ -132,7 +132,7 @@ GameObject:
   m_Layer: 0
   m_Name: ponto de disparo vilao (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -150,7 +150,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TiroBoss
   prefabBala: {fileID: 5050627496284283336, guid: f3cb7ff2e6e70af46b24e6d96bdb2a68, type: 3}
   pontoDeDisparo: {fileID: 28738882}
-  tempoEntreTiros: 2.8
+  tempoEntreTiros: 3.5
+  tempoMin: 1.5
+  tempoMax: 2.3
   audioSource: {fileID: 519420033}
   somTiro: {fileID: 8300000, guid: f6a72c8c2993a4346b04fddc0aa75745, type: 3}
 --- !u!4 &28738882
@@ -162,7 +164,7 @@ Transform:
   m_GameObject: {fileID: 28738880}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7057853, w: -0.7084258}
-  m_LocalPosition: {x: -0.24, y: 5.81, z: 0}
+  m_LocalPosition: {x: -0.87, y: 8.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -188,6 +190,8 @@ MonoBehaviour:
   prefabBala: {fileID: 5050627496284283336, guid: f3cb7ff2e6e70af46b24e6d96bdb2a68, type: 3}
   pontoDeDisparo: {fileID: 1581502660}
   tempoEntreTiros: 1.2
+  tempoMin: 1.5
+  tempoMax: 2
   audioSource: {fileID: 519420033}
   somTiro: {fileID: 8300000, guid: f6a72c8c2993a4346b04fddc0aa75745, type: 3}
 --- !u!114 &246609049
@@ -202,8 +206,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb2a34e6f4cdad64285bcee11011ce22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossVida
-  vidaMaxima: 171
-  vidaMinima: 170
+  vidaMaxima: 131
+  vidaMinima: 130
   vidaBoss: {fileID: 692869085}
 --- !u!82 &246609054
 AudioSource:
@@ -479,7 +483,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1302187449564657866, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: forcaPulo
-      value: 6
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 1302187449564657866, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: audioSource
@@ -498,20 +502,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6200000, guid: cb519ddf7123a9e40aadc84f054ae45b, type: 2}
     - target: {fileID: 6359906397542466023, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.9727626
-      objectReference: {fileID: 0}
-    - target: {fileID: 6359906397542466023, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3.424775
-      objectReference: {fileID: 0}
-    - target: {fileID: 6359906397542466023, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.54
+      value: -7.58
       objectReference: {fileID: 0}
     - target: {fileID: 6359906397542466023, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.51
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6359906397542466023, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -705,7 +701,7 @@ Transform:
   m_GameObject: {fileID: 393156487}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7066704, w: 0.70754284}
-  m_LocalPosition: {x: 0, y: -4.62, z: 0}
+  m_LocalPosition: {x: 0.09, y: -3.03, z: 0}
   m_LocalScale: {x: 1.3533262, y: 17.948044, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -842,7 +838,7 @@ Transform:
   m_GameObject: {fileID: 504002629}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.0439, y: 0.13, z: 0}
+  m_LocalPosition: {x: -9.0439, y: 0.8843, z: 0}
   m_LocalScale: {x: 0.24804679, y: 8.3683605, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1231,7 +1227,7 @@ SpriteRenderer:
   m_SortingLayerID: -1191628171
   m_SortingLayer: 9
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5d48136cf2cd63844b43942d2409c8d0, type: 3}
+  m_Sprite: {fileID: -8943689846880645223, guid: 8d6587805ffe75f49a2e8a99b8b6ed64, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1251,8 +1247,8 @@ Transform:
   m_GameObject: {fileID: 690546123}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0194, y: 4.5955, z: 0}
-  m_LocalScale: {x: 1.9835573, y: 2.479133, z: 1}
+  m_LocalPosition: {x: 0.124, y: 0.6277, z: 0}
+  m_LocalScale: {x: 6.1355634, y: 3.865759, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1582,24 +1578,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.7095482
-      objectReference: {fileID: 0}
-    - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5511022
-      objectReference: {fileID: 0}
-    - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.5367
+      value: 7.94
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.9933
+      value: -1.17
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0188
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1665,7 +1653,7 @@ GameObject:
   m_Layer: 0
   m_Name: ponto de disparo vilao (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1681,9 +1669,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ece853a0d43f0349801ee5481dd474b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TiroBoss
-  prefabBala: {fileID: 5050627496284283336, guid: e7485718912be094b96f7d7b82e101d5, type: 3}
+  prefabBala: {fileID: 5050627496284283336, guid: f3cb7ff2e6e70af46b24e6d96bdb2a68, type: 3}
   pontoDeDisparo: {fileID: 1391659584}
-  tempoEntreTiros: 2.3
+  tempoEntreTiros: 3.3
+  tempoMin: 1
+  tempoMax: 2.5
   audioSource: {fileID: 519420033}
   somTiro: {fileID: 8300000, guid: f6a72c8c2993a4346b04fddc0aa75745, type: 3}
 --- !u!4 &1391659584
@@ -1695,7 +1685,7 @@ Transform:
   m_GameObject: {fileID: 1391659582}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.70844436, w: 0.7057667}
-  m_LocalPosition: {x: -6.06, y: -6.67, z: 0}
+  m_LocalPosition: {x: -7.02, y: -6.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1714,7 +1704,7 @@ GameObject:
   m_Layer: 0
   m_Name: ponto de disparo vilao (3)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1732,7 +1722,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TiroBoss
   prefabBala: {fileID: 5050627496284283336, guid: f3cb7ff2e6e70af46b24e6d96bdb2a68, type: 3}
   pontoDeDisparo: {fileID: 1428821053}
-  tempoEntreTiros: 3
+  tempoEntreTiros: 4
+  tempoMin: 1.5
+  tempoMax: 2.5
   audioSource: {fileID: 519420033}
   somTiro: {fileID: 8300000, guid: f6a72c8c2993a4346b04fddc0aa75745, type: 3}
 --- !u!4 &1428821053
@@ -1744,7 +1736,7 @@ Transform:
   m_GameObject: {fileID: 1428821051}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7057853, w: -0.7084258}
-  m_LocalPosition: {x: 5.31, y: 5.51, z: 0}
+  m_LocalPosition: {x: 2.84, y: 8.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1881,7 +1873,7 @@ Transform:
   m_GameObject: {fileID: 1454125002}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.6645, y: 0.26, z: 0}
+  m_LocalPosition: {x: 8.6645, y: 0.8056, z: 0}
   m_LocalScale: {x: 0.609, y: 8.532587, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1899,7 +1891,7 @@ GameObject:
   m_Layer: 0
   m_Name: ponto de disparo vilao
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1912,7 +1904,7 @@ Transform:
   m_GameObject: {fileID: 1581502659}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.75, y: -3.33, z: 0}
+  m_LocalPosition: {x: 7.75, y: -1.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

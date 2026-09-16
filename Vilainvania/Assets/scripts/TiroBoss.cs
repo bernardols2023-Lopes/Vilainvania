@@ -11,7 +11,9 @@ public class TiroBoss : MonoBehaviour
     public Transform pontoDeDisparo;
 
     [Tooltip("Tempo em segundos entre cada disparo")]
-    public float tempoEntreTiros = 2.0f;
+    public float tempoEntreTiros;
+    public float tempoMin;
+    public float tempoMax;
 
     [Header("Configurações de Áudio")]
     [Tooltip("Arraste o componente AudioSource do Boss aqui")]
@@ -23,10 +25,12 @@ public class TiroBoss : MonoBehaviour
     void Start()
     {
         StartCoroutine(RotinaDeTiro());
+        
     }
 
     IEnumerator RotinaDeTiro()
     {
+        tempoEntreTiros = Random.Range(tempoMin, tempoMax);
         while (true)
         {
             yield return new WaitForSeconds(tempoEntreTiros);
