@@ -6,7 +6,8 @@ public class mov : MonoBehaviour
     public float Speed;
     public GameObject bullet;
     private Rigidbody2D rig;
-
+    private float _timer;
+    public float cooldown;
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
@@ -16,10 +17,11 @@ public class mov : MonoBehaviour
     {
         Mov();
 
-
-        if (Input.GetButtonDown("Fire1"))
+        _timer += Time.deltaTime;
+        if (Input.GetButtonDown("Fire1") && _timer >= cooldown)
         {
             Instantiate(bullet, transform.position, transform.rotation);
+            _timer = 0;
         }
 
     }
