@@ -4982,23 +4982,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.376295
+      value: 1.5780598
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.4049911
+      value: 1.5695156
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.7651
+      value: 7.6744
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.9266
+      value: -2.823
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0293
+      value: 0.0247
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5027,6 +5027,10 @@ PrefabInstance:
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8760867617284465221, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_SortingLayer
@@ -7399,7 +7403,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1302187449564657866, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: forcaPulo
-      value: 6.5
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 1302187449564657866, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: audioSource
@@ -7407,11 +7411,11 @@ PrefabInstance:
       objectReference: {fileID: 519420033}
     - target: {fileID: 1302187449564657866, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: velocidadeAndar
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1302187449564657866, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: velocidadeCorrer
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2274323135481937378, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: m_Material
@@ -7427,19 +7431,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6359906397542466023, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.4672146
+      value: 2.6330113
       objectReference: {fileID: 0}
     - target: {fileID: 6359906397542466023, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.8601239
+      value: 2.984539
       objectReference: {fileID: 0}
     - target: {fileID: 6359906397542466023, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.9256
+      value: -6.8
       objectReference: {fileID: 0}
     - target: {fileID: 6359906397542466023, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5953
+      value: -2.47
       objectReference: {fileID: 0}
     - target: {fileID: 6359906397542466023, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7472,6 +7476,10 @@ PrefabInstance:
     - target: {fileID: 6359906397542466023, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889062652173942122, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
+      propertyPath: vidaMaxima
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6889062652173942122, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: vidaPlayer
