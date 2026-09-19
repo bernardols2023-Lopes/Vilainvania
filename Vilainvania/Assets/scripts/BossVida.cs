@@ -66,7 +66,7 @@ public class BossVida : MonoBehaviour
         
         Destroy(gameObject);
 
-        SceneManager.LoadScene("Vitoria");
+        SceneManager.LoadScene("cutscene22");
        
     }
  

@@ -84,5 +84,8 @@ TagManager:
   - name: Texto
     uniqueID: 1139915887
     locked: 0
+  - name: cinza
+    uniqueID: 648406765
+    locked: 0
   m_RenderingLayers:
   - Default

@@ -31,7 +31,7 @@ EditorBuildSettings:
     guid: cb9474f3385733d46a104f500a54fef0
   - enabled: 1
     path: Assets/Scenes/cutscene1 1.unity
-    guid: 16786d543cb2cc2488553b5b57a246ac
+    guid: 1f01a53953a8b7847868a4eebb8537d0
   - enabled: 1
     path: Assets/Scenes/cutscene1 2.unity
     guid: 035bfade6bfb2c84a8e7983b1376b2d6
@@ -45,6 +45,12 @@ EditorBuildSettings:
     path: Assets/Scenes/cutscene1 5.unity
     guid: 075ff70e267310e4ab81aad33e5ddcdf
   - enabled: 1
+    path: Assets/Scenes/cutscene22.unity
+    guid: a18c367b1f95f4f468c5fdaf86607c19
+  - enabled: 1
+    path: Assets/Scenes/cutscene22 1.unity
+    guid: 9bd62a32284e1a7489312ae8553fc961
+  - enabled: 0
     path: Assets/Scenes/Vitoria 1.unity
     guid: 7bc81fba57dad9a46bc5c19477d39357
   - enabled: 0

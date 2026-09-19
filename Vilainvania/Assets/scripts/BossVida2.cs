@@ -33,7 +33,7 @@ public class BossVida2 : MonoBehaviour
         Debug.Log("Você derrotou o boss");
 
        
-        SceneManager.LoadScene("Vitoria 1");
+        SceneManager.LoadScene("Vitoria");
     }
 
     private void Update()
