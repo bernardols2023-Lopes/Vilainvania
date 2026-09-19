@@ -1281,8 +1281,8 @@ MonoBehaviour:
   prefabBala: {fileID: 1578081179778498034, guid: 2bbed398b19b9034d9f72eecce12ebdf, type: 3}
   pontoDeDisparo: {fileID: 1581502660}
   tempoEntreTiros: 1
-  tempoMin: 0.8
-  tempoMax: 0.8
+  tempoMin: 1.3
+  tempoMax: 1.3
   audioSource: {fileID: 519420033}
   somTiro: {fileID: 8300000, guid: f6a72c8c2993a4346b04fddc0aa75745, type: 3}
 --- !u!1 &263633582
