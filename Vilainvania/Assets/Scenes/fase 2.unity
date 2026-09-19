@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ece853a0d43f0349801ee5481dd474b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TiroBoss
-  prefabBala: {fileID: 5050627496284283336, guid: f3cb7ff2e6e70af46b24e6d96bdb2a68, type: 3}
+  prefabBala: {fileID: 1578081179778498034, guid: 2bbed398b19b9034d9f72eecce12ebdf, type: 3}
   pontoDeDisparo: {fileID: 28738882}
   tempoEntreTiros: 3.5
   tempoMin: 1.5
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ece853a0d43f0349801ee5481dd474b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TiroBoss
-  prefabBala: {fileID: 5050627496284283336, guid: f3cb7ff2e6e70af46b24e6d96bdb2a68, type: 3}
+  prefabBala: {fileID: 1578081179778498034, guid: 2bbed398b19b9034d9f72eecce12ebdf, type: 3}
   pontoDeDisparo: {fileID: 1581502660}
   tempoEntreTiros: 1.2
   tempoMin: 1.2
@@ -206,8 +206,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb2a34e6f4cdad64285bcee11011ce22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossVida
-  vidaMaxima: 94
-  vidaMinima: 93
+  vidaMaxima: 104
+  vidaMinima: 103
   vidaBoss: {fileID: 692869085}
 --- !u!82 &246609054
 AudioSource:
@@ -1465,7 +1465,7 @@ SpriteRenderer:
   m_SortingLayerID: -1436623661
   m_SortingLayer: 10
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5572769335589449443, guid: ac347a8feb7fc2c418a73c6e1447b71f, type: 3}
+  m_Sprite: {fileID: -953707883773386096, guid: 1914d95466e3d4341a618c35a56d5f82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1485,8 +1485,8 @@ Transform:
   m_GameObject: {fileID: 731437519}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.45, y: 4.35, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.39, y: 4.2, z: 0}
+  m_LocalScale: {x: 1.9991, y: 2.4128, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1691,7 +1691,7 @@ SpriteRenderer:
   m_SortingLayerID: -1436623661
   m_SortingLayer: 10
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5572769335589449443, guid: ac347a8feb7fc2c418a73c6e1447b71f, type: 3}
+  m_Sprite: {fileID: -953707883773386096, guid: 1914d95466e3d4341a618c35a56d5f82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1711,8 +1711,8 @@ Transform:
   m_GameObject: {fileID: 1173239538}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.16, y: 4.35, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.26, y: 4.32, z: 0}
+  m_LocalScale: {x: 2.4835384, y: 2.1393788, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1755,11 +1755,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5619779175116943675, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_Size.x
-      value: 0.8543246
+      value: 0.45803964
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619779175116943675, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+      propertyPath: m_Size.y
+      value: 0.78520125
       objectReference: {fileID: 0}
     - target: {fileID: 5619779175116943675, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_Offset.x
-      value: -0.022837713
+      value: 0.3206091
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619779175116943675, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.10880801
       objectReference: {fileID: 0}
     - target: {fileID: 5619779175116943675, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_IsTrigger
@@ -1769,29 +1777,37 @@ PrefabInstance:
       propertyPath: m_UsedByEffector
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5619779175116943675, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619779175116943675, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.93
+      objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.6406217
+      value: 3.2485812
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.6871477
+      value: 4.2849245
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.34
+      value: 6.8748
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.37
+      value: -1.162
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.05
+      value: -0.2366
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.025385866
+      value: -0.996924
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1799,7 +1815,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9996778
+      value: 0.07837439
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1811,12 +1827,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 177.091
+      value: 351.01
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8760867617284465221, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6416028094590494610, guid: 1914d95466e3d4341a618c35a56d5f82, type: 3}
     - target: {fileID: 8760867617284465221, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_SortingLayer
       value: 10
@@ -1869,7 +1889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ece853a0d43f0349801ee5481dd474b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TiroBoss
-  prefabBala: {fileID: 5050627496284283336, guid: e7485718912be094b96f7d7b82e101d5, type: 3}
+  prefabBala: {fileID: 1578081179778498034, guid: 2bbed398b19b9034d9f72eecce12ebdf, type: 3}
   pontoDeDisparo: {fileID: 1391659584}
   tempoEntreTiros: 3.3
   tempoMin: 2
@@ -1885,7 +1905,7 @@ Transform:
   m_GameObject: {fileID: 1391659582}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.70844436, w: 0.7057667}
-  m_LocalPosition: {x: -7.39, y: -6.9, z: 0}
+  m_LocalPosition: {x: -7.13, y: -6.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1955,7 +1975,7 @@ SpriteRenderer:
   m_SortingLayerID: -1436623661
   m_SortingLayer: 10
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5572769335589449443, guid: ac347a8feb7fc2c418a73c6e1447b71f, type: 3}
+  m_Sprite: {fileID: -3351220719838747524, guid: 1914d95466e3d4341a618c35a56d5f82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1974,13 +1994,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420354892}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.29, y: -4.49, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.99998975, w: 0.004532319}
+  m_LocalPosition: {x: -6.79, y: -4.26, z: 0}
+  m_LocalScale: {x: 2.3351266, y: 2.4953644, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -179.481}
 --- !u!1 &1428821051
 GameObject:
   m_ObjectHideFlags: 0
@@ -2010,7 +2030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ece853a0d43f0349801ee5481dd474b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TiroBoss
-  prefabBala: {fileID: 5050627496284283336, guid: f3cb7ff2e6e70af46b24e6d96bdb2a68, type: 3}
+  prefabBala: {fileID: 1578081179778498034, guid: 2bbed398b19b9034d9f72eecce12ebdf, type: 3}
   pontoDeDisparo: {fileID: 1428821053}
   tempoEntreTiros: 4
   tempoMin: 1.5

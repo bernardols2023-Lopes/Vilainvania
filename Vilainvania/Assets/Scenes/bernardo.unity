@@ -1279,7 +1279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ece853a0d43f0349801ee5481dd474b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TiroBoss
-  prefabBala: {fileID: 5050627496284283336, guid: f3cb7ff2e6e70af46b24e6d96bdb2a68, type: 3}
+  prefabBala: {fileID: 1578081179778498034, guid: 2bbed398b19b9034d9f72eecce12ebdf, type: 3}
   pontoDeDisparo: {fileID: 1581502660}
   tempoEntreTiros: 1.5
   tempoMin: 1.5
@@ -5069,11 +5069,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5619779175116943675, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_Size.x
-      value: 0.8543246
+      value: 0.4985997
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619779175116943675, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6042322
       objectReference: {fileID: 0}
     - target: {fileID: 5619779175116943675, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_Offset.x
-      value: -0.022837713
+      value: 0.3582953
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619779175116943675, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.17358567
       objectReference: {fileID: 0}
     - target: {fileID: 5619779175116943675, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_IsTrigger
@@ -5083,29 +5091,37 @@ PrefabInstance:
       propertyPath: m_UsedByEffector
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5619779175116943675, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619779175116943675, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.93
+      objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5780598
+      value: 3.3363342
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5695156
+      value: 4.3951144
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.6744
+      value: 6.44
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.823
+      value: -1.85
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0247
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.025385866
+      value: -0.9999918
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalRotation.x
@@ -5113,7 +5129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9996778
+      value: 0.0040673045
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalRotation.z
@@ -5125,7 +5141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 177.091
+      value: 359.534
       objectReference: {fileID: 0}
     - target: {fileID: 7853625739321826538, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -5135,6 +5151,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8760867617284465221, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -643843233168925960, guid: 1914d95466e3d4341a618c35a56d5f82, type: 3}
     - target: {fileID: 8760867617284465221, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_SortingLayer
       value: 10
