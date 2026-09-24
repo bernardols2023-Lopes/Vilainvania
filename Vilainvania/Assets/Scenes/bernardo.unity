@@ -6034,7 +6034,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1302187449564657866, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: forcaPulo
-      value: 5.5
+      value: 5.7
       objectReference: {fileID: 0}
     - target: {fileID: 1302187449564657866, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: audioSource
