@@ -50,6 +50,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cutscene22 1.unity
     guid: 9bd62a32284e1a7489312ae8553fc961
+  - enabled: 1
+    path: Assets/Scenes/tuto.unity
+    guid: 87f2d65174e8fda438727bdaf6abd8ea
   - enabled: 0
     path: Assets/Scenes/Vitoria 1.unity
     guid: 7bc81fba57dad9a46bc5c19477d39357
