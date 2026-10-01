@@ -11,7 +11,7 @@ public class Boss_Vida : MonoBehaviour
     [SerializeField] private TMP_Text vidaBoss;
     [SerializeField] private string tagDoTiro = "TiroHeroi";
 
-    // Mensagens do Unity
+    
     void Start()
     {
         vidaAtual = vidaMaxima;
@@ -25,7 +25,7 @@ public class Boss_Vida : MonoBehaviour
         }
     }
 
-    // Função que detecta o tiro do herói através da TAG
+    //detecta o tiro do herói através da tag
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(tagDoTiro))
@@ -35,7 +35,7 @@ public class Boss_Vida : MonoBehaviour
         }
     }
 
-    // Função pública para processar o dano
+    
     public void TomarDano(int quantidadeDano)
     {
         vidaAtual -= quantidadeDano;
@@ -47,7 +47,7 @@ public class Boss_Vida : MonoBehaviour
         }
     }
 
-    // Função de morte unificada e corrigida
+
     void Morrer()
     {
         Debug.Log("Você derrotou o boss");
