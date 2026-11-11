@@ -22,6 +22,7 @@ public class ControlaJogador : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip somPulo;
     public AudioClip somTiro;
+    
 
     void Start()
     {
@@ -108,6 +109,7 @@ public class ControlaJogador : MonoBehaviour
         if (anim != null)
         {
             anim.SetTrigger("takeDamage");
+            anim.Play("Pisca");
         }
     }
 
