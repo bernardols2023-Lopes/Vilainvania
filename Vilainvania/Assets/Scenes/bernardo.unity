@@ -874,6 +874,21 @@ MonoBehaviour:
   tempoMax: 1.3
   audioSource: {fileID: 519420033}
   somTiro: {fileID: 8300000, guid: f6a72c8c2993a4346b04fddc0aa75745, type: 3}
+--- !u!114 &246609049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246609041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0466be7ceae60bb4eaca0d986d376dec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PiscarDano_2
+  corDano: {r: 0.5, g: 0, b: 0.5, a: 1}
+  duracaoTotal: 0.6
+  intervaloPiscada: 0.1
 --- !u!1 &263633582
 GameObject:
   m_ObjectHideFlags: 0
@@ -2760,6 +2775,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &830223954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8325064104484244090, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
+  m_PrefabInstance: {fileID: 7443011443774812976}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &830223960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830223954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c0ccb99c9eb7d498116dce2426d213, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PiscarDano
+  corDano: {r: 1, g: 0, b: 0.0947485, a: 1}
+  duracaoTotal: 0.6
+  intervaloPiscada: 0.1
 --- !u!1 &991739218
 GameObject:
   m_ObjectHideFlags: 0
@@ -3833,6 +3868,14 @@ PrefabInstance:
       propertyPath: vidaMaxima2
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 619416308793971096, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+      propertyPath: duracaoTotal
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 619416308793971096, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+      propertyPath: intervaloPiscada
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5335240072865282281, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: m_Name
       value: hero 1
@@ -3938,7 +3981,10 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5335240072865282281, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
-      insertIndex: 4
+      insertIndex: 2
+      addedObject: {fileID: 246609049}
+    - targetCorrespondingSourceObject: {fileID: 5335240072865282281, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
+      insertIndex: 5
       addedObject: {fileID: 246609043}
   m_SourcePrefab: {fileID: 100100000, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
 --- !u!1 &1362940514
@@ -6147,7 +6193,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8325064104484244090, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 830223960}
   m_SourcePrefab: {fileID: 100100000, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
