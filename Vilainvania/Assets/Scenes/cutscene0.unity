@@ -996,9 +996,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1675293304}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -234, y: 154}
+  m_AnchorMin: {x: 0.52125, y: 0.3914349}
+  m_AnchorMax: {x: 0.52125, y: 0.3914349}
+  m_AnchoredPosition: {x: -354, y: 122}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211120271
@@ -1021,9 +1021,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cinzas... foi tudo o que restou dos meus amigos e da minha fam\xEDlia
-    por sua causa. Seu imp\xE9rio pode ser poderoso, mas hoje eu colocarei um fim
-    a ele, custe o que custar!"
+  m_text: "Cinzas... foi tudo o que sobrou dos meus entes queridos por sua causa.
+    Hoje seu imp\xE9rio cai, custe o que custar!\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a727cbb2758ebc42b1733b70ad46789, type: 2}
   m_sharedMaterial: {fileID: 4286255260022459823, guid: 5a727cbb2758ebc42b1733b70ad46789, type: 2}
@@ -1050,8 +1049,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29
-  m_fontSizeBase: 29
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1088,7 +1087,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -34.493507, y: 0, z: -492.98315, w: -130.40009}
+  m_margin: {x: 227.87076, y: 0, z: -492.98315, w: -130.40009}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
