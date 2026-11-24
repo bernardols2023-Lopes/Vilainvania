@@ -469,7 +469,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -277, y: 173}
+  m_AnchoredPosition: {x: -267, y: 141}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211120271
@@ -492,9 +492,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "O seu povo por causa de um boato, ele n\xE3o roubava voc\xEAs ele ajudava
-    esse seu povo h\xE1 10 anos atr\xE1s, ele era o melhor cientista e melhor pai,
-    porque ele tinha que morrer?....."
+  m_text: "Por causa de um boato, seu povo matou um \xF3timo pai e cientista que
+    n\xE3o os roubava, mas os ajudava h\xE1 10 anos."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a727cbb2758ebc42b1733b70ad46789, type: 2}
   m_sharedMaterial: {fileID: 4286255260022459823, guid: 5a727cbb2758ebc42b1733b70ad46789, type: 2}
@@ -559,7 +558,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -530.3134, w: 0}
+  m_margin: {x: 0, y: 0, z: -350.01022, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -610,7 +609,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -170, y: -175}
+  m_AnchoredPosition: {x: -219.2, y: -151.6}
   m_SizeDelta: {x: 185.2925, y: 47.5329}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1591320207
@@ -1277,7 +1276,7 @@ Transform:
   m_GameObject: {fileID: 1930464092}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -31.7185, y: 17.2223, z: 0}
+  m_LocalPosition: {x: -26.3, y: 16.4, z: 0}
   m_LocalScale: {x: 9.08232, y: 5.8135595, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
