@@ -379,8 +379,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -199.96288, y: 145.52628}
-  m_SizeDelta: {x: 172.0743, y: 144.9474}
+  m_AnchoredPosition: {x: -177, y: 97}
+  m_SizeDelta: {x: 173.2301, y: 144.9474}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211120271
 MonoBehaviour:
@@ -402,8 +402,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "O seu povo tamb\xE9m deixou em cinzas o que eu mais amava, o meu pai s\xF3
-    queria ajudar, ele ajudava voc\xEAs."
+  m_text: "O povo de voc\xEAs tamb\xE9m destruiu o que eu mais amava, mesmo meu pai
+    s\xF3 ajudando voc\xEAs."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a727cbb2758ebc42b1733b70ad46789, type: 2}
   m_sharedMaterial: {fileID: 4286255260022459823, guid: 5a727cbb2758ebc42b1733b70ad46789, type: 2}
