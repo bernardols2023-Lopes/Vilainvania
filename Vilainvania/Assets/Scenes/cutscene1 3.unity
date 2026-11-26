@@ -379,7 +379,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -277, y: 173}
+  m_AnchoredPosition: {x: 124, y: 168}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211120271
@@ -402,9 +402,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Esse povo que escraviza agora n\xE3o tem nada a ver com isso, eu vi voc\xEA
-    botando fogo nas nossas casas, o povo logo se revoltar\xE1 e vai destrur o seu
-    imp\xE9rio, liberta meu povo Villain."
+  m_text: "ESSE POVO N\xC3O MERECIA NADA DISSO"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a727cbb2758ebc42b1733b70ad46789, type: 2}
   m_sharedMaterial: {fileID: 4286255260022459823, guid: 5a727cbb2758ebc42b1733b70ad46789, type: 2}
@@ -469,7 +467,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -19.87149, y: 0, z: -570.057, w: 0}
+  m_margin: {x: -19.87149, y: 0, z: -190.35736, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
