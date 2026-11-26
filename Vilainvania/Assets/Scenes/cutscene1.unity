@@ -525,8 +525,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Veremos quanto tempo voc\xEA sobrevive, her\xF3i. Seu destino ser\xE1
-    o mesmo da sua fam\xEDlia!"
+  m_text: Veremos se aguenta
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a727cbb2758ebc42b1733b70ad46789, type: 2}
   m_sharedMaterial: {fileID: 4286255260022459823, guid: 5a727cbb2758ebc42b1733b70ad46789, type: 2}
@@ -642,7 +641,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -204.1, y: -202.8}
+  m_AnchoredPosition: {x: -215, y: -206.68}
   m_SizeDelta: {x: 151.7816, y: 36.3626}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1591320207
@@ -1283,7 +1282,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Eu vou te derrotar Villain!
+  m_text: Eu vou te DERROTAR!!!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a727cbb2758ebc42b1733b70ad46789, type: 2}
   m_sharedMaterial: {fileID: 4286255260022459823, guid: 5a727cbb2758ebc42b1733b70ad46789, type: 2}
