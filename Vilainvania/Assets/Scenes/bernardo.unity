@@ -3858,11 +3858,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 619416308793971096, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: vidaMaxima
-      value: 63
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 619416308793971096, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: vidaMinima
-      value: 63
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 619416308793971096, guid: 179bdf7e9a9787a4a96732fbec026698, type: 3}
       propertyPath: vidaMaxima2
@@ -6164,7 +6164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6889062652173942122, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: vidaMaxima
-      value: 16
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6889062652173942122, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: vidaPlayer

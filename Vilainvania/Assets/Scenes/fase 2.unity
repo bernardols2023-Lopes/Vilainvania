@@ -926,8 +926,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb2a34e6f4cdad64285bcee11011ce22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossVida
-  vidaMaxima: 76
-  vidaMinima: 75
+  vidaMaxima: 46
+  vidaMinima: 45
   vidaBoss: {fileID: 692869085}
   corDano: {r: 0.5, g: 0, b: 0.5, a: 1}
   duracaoTotal: 0.1
@@ -1275,6 +1275,10 @@ PrefabInstance:
     - target: {fileID: 6359906397542466023, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889062652173942122, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
+      propertyPath: vidaMaxima
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6889062652173942122, guid: 7545019b5ee866941bc616e598cb40e4, type: 3}
       propertyPath: vidaPlayer
