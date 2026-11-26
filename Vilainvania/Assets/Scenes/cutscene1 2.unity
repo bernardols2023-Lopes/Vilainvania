@@ -492,7 +492,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Por causa de um boato, seu povo matou um \xF3timo pai e cientista que
+  m_text: "Por causa de um boato, seu povo matou um \xF3timo pai e alquimista que
     n\xE3o os roubava, mas os ajudava h\xE1 10 anos."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a727cbb2758ebc42b1733b70ad46789, type: 2}
