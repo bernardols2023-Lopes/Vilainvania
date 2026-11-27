@@ -2628,8 +2628,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "ALUNOS: Bernardo Lopes, foi o Game Designer e o artista.\nEmanuel Ferreira,
-    ajudou na organiza\xE7\xE3o."
+  m_text: 'ALUNOS: Bernardo Lopes, Emanuel Ferreira'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5a727cbb2758ebc42b1733b70ad46789, type: 2}
   m_sharedMaterial: {fileID: 4286255260022459823, guid: 5a727cbb2758ebc42b1733b70ad46789, type: 2}
